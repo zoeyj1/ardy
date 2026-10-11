@@ -29,8 +29,8 @@ Only Step 1 needs a GPU. Steps 3 to 5 run on a normal laptop. If you want to ski
 |---|---|
 | Code (fork of NVIDIA's Ardy) | https://github.com/zoeyj1/ardy, branch `ardy-bvh-export` |
 | Converter script | `scripts/npz_to_bvh.py` |
-| Lightning AI studio | `ardy-test` (L4 GPU), under zoeyj-org / ai-powered-social-game-project. *TODO: share access or add recreate notes.* |
-| Sample files (`test1.npz`, `test1.bvh`, `.blend`, `.fbx`, Unity package) | *TODO: shared drive link* |
+| Lightning AI studio | `ardy-test` (L4 GPU), under zoeyj-org / ai-powered-social-game-project. Only needed for Step 1. Andy can skip it by using test1.bvh from the shared folder. |
+| Sample files (`test1.npz`, `test1.bvh`, `.blend`, `.fbx`, Unity package) | https://drive.google.com/drive/folders/1WOCgwDtRh6U--dVyJ_KIx6dLdjMls_qB?usp=sharing |
 
 ---
 
@@ -38,7 +38,7 @@ Only Step 1 needs a GPU. Steps 3 to 5 run on a normal laptop. If you want to ski
 
 - **GPU with 17 GB+ VRAM** for Step 1 (an L4 24 GB on Lightning AI works, about $0.79/hr). A Kaggle T4 is not enough.
 - **Blender 4.2.23 LTS.** Do not use a newer version: 4.4+ (and 5.2.1, which we tried) breaks the Rokoko add-on. You can install 4.2 LTS alongside a newer Blender.
-- **Rokoko add-on v1.4.3 (Studio Live).** *TODO: add download link.* Install it in Blender via Edit → Preferences → Add-ons → Install from Disk, then enable it.
+- **Rokoko add-on v1.4.3 (Studio Live).** https://www.rokoko.com/integrations/blender Install it in Blender via Edit → Preferences → Add-ons → Install from Disk, then enable it.
 - **A Mixamo account** (free Adobe account) to download the X Bot character.
 - **Unity 6.5 (6000.5.8f1).**
 
@@ -103,7 +103,7 @@ The scene's **End** frame must cover the whole animation (ours is 130). If the c
 2. Delete every action except the retargeted one (it is named something like `test1 Retarget`). This removes the Mixamo animation (`mixamo.com|Layer0`) that came with the X Bot.
 3. Switch the Outliner back to **View Layer**. Check that `Armature` → Animation still shows the action. If it is empty, assign it in a Dope Sheet → Action Editor.
 4. Delete the `test1` skeleton (select it, press **X**).
-5. Save the `.blend`. *TODO: file name and shared-drive location.*
+5. Save the `.blend`. genlarp_retarget_v3.blend in Ardy Handoff Google Drive
 
 ---
 
@@ -192,4 +192,4 @@ Mapping works automatically here because the source bones use the same `mixamori
 
 ---
 
-*Verified end to end on: TODO (date, by whom).*
+*Verified end to end on: 10/11/26 by Zoey Ji*
