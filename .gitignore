@@ -164,3 +164,7 @@ nohup.out
 train_done
 .aider*
 onelogger.err
+
+*.npz
+*.bvh
+.env
